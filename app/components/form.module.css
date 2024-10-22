@@ -1,0 +1,141 @@
+.sectionForm {
+  padding-inline: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  padding-block: 4em;
+  max-width: 90em;
+  margin: auto;
+}
+
+.sectionForm > form > h1 {
+  margin-bottom: 0em;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  position: relative;
+  padding: 2em;
+}
+
+.form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #3f2b21;
+  border-radius: 8px;
+  z-index: -1;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup > input,
+.formGroup > textarea {
+  width: 100%;
+  padding: 0.625em;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+}
+
+form label,
+form h1 {
+  color: white;
+}
+
+form h1 {
+  font-size: var(--fs-2xl);
+}
+
+button {
+  background-color: #f7956f;
+  border: none;
+  padding: 1em;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.articleForm {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1em;
+}
+
+.logoContainer,
+.cocktailInfo,
+.socialMediaList li {
+  background-color: #3f2b21;
+  border-radius: 8px;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  padding: 3em;
+}
+
+.cocktailInfo {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.cocktailInfo p {
+  display: flex;
+  gap: 1em;
+  font-size: 1em;
+  align-items: center;
+}
+
+.socialMediaList {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 0.5em;
+}
+
+.socialMediaList li {
+  background-color: #3f2b21;
+  border-radius: 8px;
+}
+
+.socialMediaList li a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 1em;
+}
+
+@media (min-width: 44em) {
+  .sectionForm {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .form {
+    width: 50%;
+    max-width: 50%;
+  }
+  .articleForm {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 55em) {
+  .sectionForm {
+    padding-inline: 8em;
+  }
+}

@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  gap: 1.5rem;
+  z-index: 900;
+}
+
+.ulNav > li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.ulNav > li > a {
+  text-decoration: none;
+  color: #ffbb9a;
+  font-size: 1.5em;
+  white-space: nowrap;
+}
